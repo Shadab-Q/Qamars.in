@@ -5,39 +5,71 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Qamars Consultancy</title>
-  <link href="style.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      min-height: 100vh;
+    }
+    nav {
+      width: 220px;
+      background: #004c66;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    nav h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+    nav a:hover {
+      background: #006b8f;
+    }
+    main {
+      padding: 30px;
+      flex-grow: 1;
+      background: #f4f4f4;
+    }
+    h1 {
+      color: #333;
+    }
+    .tagline {
+      font-size: 18px;
+      color: #777;
+    }
+    section {
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Qamars Consultancy</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <nav>
+    <h2>Qamars.in</h2>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <main>
+    <h1>Empowering Your Business with Expert Consultancy</h1>
+    <p class="tagline">Income Tax | GST | Business Consultancy</p>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Empowering Your Business with Expert Consultancy</h2>
-      <p>Taxation | Registrations | Business Support</p>
-    </div>
-  </section>
-
-  <section id="about" class="section">
-    <div class="container">
+    <section id="about">
       <h2>About Us</h2>
       <p>Qamars Consultancy is your trusted partner in navigating the complex world of finance, taxation, and business compliance. We offer comprehensive consulting services designed to support individuals, startups, and established businesses.</p>
       <p>With a strong foundation in tax, audit, and accounting, we’re committed to delivering practical and efficient solutions that help our clients grow confidently and stay compliant.</p>
-    </div>
-  </section>
+    </section>
 
-  <section id="services" class="section">
-    <div class="container">
+    <section id="services">
       <h2>Our Services</h2>
       <ul>
         <li><strong>Income Tax:</strong> ITR Filing, TDS Return Filing, Income Tax Consultancy</li>
@@ -46,21 +78,17 @@
         <li><strong>Accounting & Bookkeeping:</strong> Professional bookkeeping and record maintenance</li>
         <li><strong>Business Consultancy:</strong> Strategic business and financial advisory</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section">
-    <div class="container">
+    <section id="contact">
       <h2>Contact Us</h2>
       <p>Email: <a href="mailto:qamars.consultancy@gmail.com">qamars.consultancy@gmail.com</a></p>
       <p>Phone: +91 8789-482-043</p>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="container">
+    <footer>
       <p>&copy; 2025 Qamars Consultancy. All rights reserved.</p>
-    </div>
-  </footer>
+    </footer>
+  </main>
 </body>
 </html>
